@@ -10,6 +10,8 @@ app.use(express.json())
 app.use(bodyparser.urlencoded({extended:true}))
 
 
+const routes = require("./rutas/rutas")
+app.use("/api", routes)
 
 
 app.listen(PORT, () => {
