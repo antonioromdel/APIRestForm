@@ -3,7 +3,7 @@ API REST con nodeJS, express y nodemailer realizada para recoger datos de un for
 Para su funcionamiento correcto es necesario incluir en transporter y en mailOptions los datos correctos del emisor y receptor del email. Por ejemplo:
 
 let transporter = nodemailer.createTransport({
-        host:"smt.gmail.com",
+        host:"smtp.gmail.com",
         port: "465",
         secure: true,
         auth:{
